@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="color-scheme", content="light dark")
+    link(rel="stylesheet", href="css/pico.classless.min.css")
+    title=title
+  body
+    include includes/header.pug
+    main.container(style="max-width: 400px")
+      h2 User profile
+      form(method="post")
+        label Name
+        input(name="name", type="text", value=name)
+        label Age
+        input(name="age", type="number", value=age)
+        label Salary
+        input(name="salary", type="number", value=salary)
+
+        button(type="submit") Save
+
+    include includes/footer.pug
+

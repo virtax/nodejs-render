@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css")
+  body
+    include includes/header.pug
+    main.container(style="max-width: 400px")
+      h2 User sales
+      table
+        tr
+          td product
+          td price
+          td amount
+        each val in sales.length ? sales : ['There are no values']
+          tr
+            td=val.product
+            td=val.price
+            td=val.amount
+
+    include includes/footer.pug

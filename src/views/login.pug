@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="color-scheme", content="light dark")
+    link(rel="stylesheet", href="css/pico.classless.min.css")
+    title=title
+  body
+    main.container(style="max-width: 400px")
+      h2 Login user
+      form(method="post")
+        label Email
+        input(name="email", type="email")
+        label Password
+        input(name="password", type="password")
+        button(type="submit") Login
+
+    include includes/footer.pug
+
