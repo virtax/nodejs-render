@@ -16,12 +16,12 @@ services:
 
     plan: free  # Change to 'starter', 'standard', etc., as needed
     buildCommand: npm install
-    startCommand: npm run start:dev
-    healthCheckPath: /
+    # startCommand: npm run start:dev
+    # healthCheckPath: /
     autoDeploy: true
-    disk:
-      name: node-src
-      mountPath: /home/node/app/src
+    # disk:
+    #   name: node-src
+    #   mountPath: /home/node/app/src
 
   - type: web
     name: adminer
